@@ -15,14 +15,13 @@
 char val;
 const int ONE_HUNDRED = 100;
 
-Adafruit_MotorShield top(0x60);
-Adafruit_MotorShield bot(0x61);
+Adafruit_MotorShield top(0x60);//init top    shield
+Adafruit_MotorShield bot(0x61);//init bottom shield
 
 Adafruit_StepperMotor *Stepper1 = top.getStepper(200, 1);
 Adafruit_StepperMotor *Stepper2 = top.getStepper(200, 2);
 Adafruit_StepperMotor *Stepper3 = bot.getStepper(200, 1);
 Adafruit_StepperMotor *Stepper4 = bot.getStepper(200, 2);
-//Adafruit_StepperMotor *myStepper1 = AFMStop.getStepper(200, 1);
 
 // the setup function runs once when you press reset or power the board
 void setup() {
